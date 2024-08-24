@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/tasks"; // Assuming json-server is running on port 3000
+const API_URL = "http://localhost:3000/tasks";
 
 export const fetchTasks = createAsyncThunk("tasks/fetchTasks", async () => {
   const response = await axios.get(API_URL);
